@@ -60,8 +60,19 @@ def formatar_salario(df):
     )
     print(copia_df[['nome', 'salario']])
 
+def padronizar_data(data_admissao):
+    
+    meses = {
+        'janeiro': '01', 'fevereiro': '02', 'março': '03',
+        'abril': '04', 'maio': '05', 'junho': '06',
+        'julho': '07', 'agosto': '08', 'setembro': '09',
+        'outubro': '10', 'novembro': '11', 'dezembro': '12'
+    }
 
-def padronizar_data():
+    data = data_admissao.apply (lambda x : x.strip())
+
+    print (data)
+    
     print()
 
 def padronizar_regime():
